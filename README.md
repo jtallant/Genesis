@@ -12,7 +12,7 @@ It's just that simple!
 
 If you haven't got Package Control installed (seriously, go install it!) you will need to make a clone of this repository into your packages folder, like so:
 
-    git clone https://github.com/jtallant/genesis.git Genesis Snippets
+    git clone https://github.com/jtallant/Genesis.git
 
 
 [sublime]: http://www.sublimetext.com/
