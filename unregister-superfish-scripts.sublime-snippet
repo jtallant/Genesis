@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'wp_enqueue_scripts', 'unregister_superfish' );
+function unregister_superfish() {
+	wp_deregister_script( 'superfish' );
+	wp_deregister_script( 'superfish-args' );
+}
+]]></content>
+	<tabTrigger>ursuperfish</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Unregister superfish scripts</description>
+</snippet>

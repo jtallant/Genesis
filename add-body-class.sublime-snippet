@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'body_class', 'add_body_class' );
+function add_body_class( \$classes ) {
+   \$classes[] = '${1:class-name}';
+   return \$classes;
+}
+]]></content>
+	<tabTrigger>addbodyclass</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Add custom body class</description>
+</snippet>
