@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'genesis_meta', 'child_viewport_meta_tag' );
+function child_viewport_meta_tag() {
+	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
+}
+]]></content>
+	<tabTrigger>viewportmeta</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Add viewport for responsive (mobile) design</description>
+</snippet>
