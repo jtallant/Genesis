@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+]]></content>
+	<tabTrigger>removebc</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Remove the Breadcrumb</description>
+</snippet>

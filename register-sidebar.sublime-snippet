@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+genesis_register_sidebar( array(
+	'id'			=> '${1:must-be-slug}',
+	'name'			=> '${2:Can Have Spaces}',
+	'description'	=> 'This is the $2 section'
+) );
+]]></content>
+	<tabTrigger>grs</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Register genesis sidebar</description>
+</snippet>

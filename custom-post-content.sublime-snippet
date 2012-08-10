@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_post_content', 'genesis_do_post_content' );
+add_action( 'genesis_post_content', '${1:prefix}_do_post_content' );
+
+function ${1:prefix}_do_post_content() {
+	$2
+}
+]]></content>
+	<tabTrigger>custompc</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Custom post content function</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+]]></content>
+	<tabTrigger>forcefull</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Force Full With Page Layout</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+function child_enable_menu_description( \$item_output, \$item ) {
+	if ( ' ' !== \$item->post_content ) {
+		return preg_replace( '/(<a.*?>[^<]*?)</', '\$1' . '<span>' . \$item->post_content . '</span><',  \$item_output );
+	} else {
+		return \$item_output;
+	}
+}
+add_filter( 'walker_nav_menu_start_el', 'child_enable_menu_description', 10, 2 );
+]]></content>
+	<tabTrigger>emd</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Display description in menus</description>
+</snippet>

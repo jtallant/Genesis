@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', '${1:child}_do_footer' );
+function ${1:child}_do_footer() {
+	$2
+}
+]]></content>
+	<tabTrigger>customfooter</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Create custom footer</description>
+</snippet>
+
+

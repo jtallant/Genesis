@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_before_header', 'genesis_do_subnav' );
+]]></content>
+	<tabTrigger>repositionsubnav</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Reposition Subnav</description>
+</snippet>
