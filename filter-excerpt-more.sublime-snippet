@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'excerpt_more', 'child_theme_excerpt_more' );
+function child_theme_excerpt_more( \$more ) {
+	return '${1:...}';
+}
+$2
+]]></content>
+	<tabTrigger>filterexcerptmore</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Filter Excerpt More</description>
+</snippet>

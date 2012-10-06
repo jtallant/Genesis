@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+add_filter('genesis_search_button_text', 'child_theme_search_button_text');
+function child_theme_search_button_text( \$text ) {
+	return esc_attr( '${1:Go}' );
+}
+]]></content>
+	<tabTrigger>customsearchbutton</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Customize Search Button Text</description>
+</snippet>

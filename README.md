@@ -17,3 +17,7 @@ If you haven't got Package Control installed (seriously, go install it!) you wil
 
 [sublime]: http://www.sublimetext.com/
 [package_control]: http://wbond.net/sublime_packages/package_control
+
+### Full List of Available Snippets and their tab triggers ###
+
+[snippet_list]: http://justintallant.com/genesis-sublime-text-2-snippets

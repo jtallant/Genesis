@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+add_filter('genesis_search_text', 'child_theme_search_text');
+function child_theme_search_text( \$text ) {
+	return esc_attr( '${1:Search}' );
+}
+$2
+]]></content>
+	<tabTrigger>customsearchtext</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Customize Search Text</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+add_theme_support( 'genesis-structural-wraps', array( 'inner' ) );
+]]></content>
+	<tabTrigger>structuralwraps</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Enable structural wraps</description>
+</snippet>
