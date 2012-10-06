@@ -14,10 +14,12 @@ If you haven't got Package Control installed (seriously, go install it!) you wil
 
     git clone https://github.com/jtallant/Genesis.git
 
+### Full List of Available Snippets and their tab triggers ###
+
+[Snippet List With Tab Triggers][snippet_list]
 
 [sublime]: http://www.sublimetext.com/
 [package_control]: http://wbond.net/sublime_packages/package_control
-
-### Full List of Available Snippets and their tab triggers ###
-
 [snippet_list]: http://justintallant.com/genesis-sublime-text-2-snippets
+
+
