@@ -1,8 +1,14 @@
 <snippet>
 	<content><![CDATA[
-add_filter('genesis_search_button_text', 'child_theme_search_button_text');
-function child_theme_search_button_text( \$text ) {
-	return esc_attr( '${1:Go}' );
+add_filter( 'genesis_search_button_text', '${1:child}_search_button_text' );
+/**
+ * Returns the customized search button text
+ *
+ * @param  string \$text the current search text
+ * @return string the customized text
+ */
+function ${1:child}_search_button_text( \$text ) {
+	return esc_attr( '${2:Go}' );
 }
 ]]></content>
 	<tabTrigger>customsearchbutton</tabTrigger>

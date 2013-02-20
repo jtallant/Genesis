@@ -1,7 +1,13 @@
 <snippet>
 	<content><![CDATA[
-add_filter('genesis_search_text', 'child_theme_search_text');
-function child_theme_search_text( \$text ) {
+add_filter( 'genesis_search_text', '${1:child}_search_text' );
+/**
+ * Customizes the text of the search input
+ *
+ * @param  string \$text current text
+ * @return string modified text
+ */
+function ${1:child}_search_text( \$text ) {
 	return esc_attr( '${1:Search}' );
 }
 $2

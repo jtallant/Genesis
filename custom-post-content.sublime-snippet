@@ -2,7 +2,11 @@
 	<content><![CDATA[
 remove_action( 'genesis_post_content', 'genesis_do_post_content' );
 add_action( 'genesis_post_content', '${1:prefix}_do_post_content' );
-
+/**
+ * Outputs markup to genesis_post_content hook
+ *
+ * @return void
+ */
 function ${1:prefix}_do_post_content() {
 	$2
 }

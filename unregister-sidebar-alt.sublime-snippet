@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-unregister_sidebar('sidebar-alt');
+unregister_sidebar( 'sidebar-alt' );
 ]]></content>
 	<tabTrigger>uralt</tabTrigger>
 	<scope>source.php,source.php.embedded.block.html</scope>

@@ -2,6 +2,11 @@
 	<content><![CDATA[
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', '${1:child}_do_footer' );
+/**
+ * Outputs markup to the footer
+ *
+ * @return void
+ */
 function ${1:child}_do_footer() {
 	$2
 }

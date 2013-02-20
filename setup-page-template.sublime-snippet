@@ -4,12 +4,23 @@
 ${1:/*
 	Template Name: ${2: Template Name}
 */}
+
+# Force full width content
 // add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+# Remove the breadcrumb
 // remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+# Remove the post title
 // remove_action( 'genesis_post_title', 'genesis_do_post_title' );
+# Remove the post content
 remove_action( 'genesis_post_content', 'genesis_do_post_content' );
+# Add custom post content
 add_action( 'genesis_post_content', '${3:prefix}_do_post_content' );
 
+/**
+ * Outputs custom post content
+ *
+ * @return void
+ */
 function ${3:prefix}_do_post_content() {
 	$4
 }

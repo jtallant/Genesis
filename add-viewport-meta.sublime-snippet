@@ -1,7 +1,12 @@
 <snippet>
 	<content><![CDATA[
-add_action( 'genesis_meta', 'child_viewport_meta_tag' );
-function child_viewport_meta_tag() {
+add_action( 'genesis_meta', '${1:child}_viewport_meta_tag' );
+/**
+ * Outputs the viewport meta tag to the document head
+ *
+ * @return void
+ */
+function ${1:child}_viewport_meta_tag() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
 }
 ]]></content>

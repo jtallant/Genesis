@@ -1,5 +1,6 @@
 <snippet>
 	<content><![CDATA[
+# Remove the breadcrumb
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 ]]></content>
 	<tabTrigger>removebc</tabTrigger>

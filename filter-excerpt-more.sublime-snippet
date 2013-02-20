@@ -1,10 +1,15 @@
 <snippet>
 	<content><![CDATA[
-add_filter( 'excerpt_more', 'child_theme_excerpt_more' );
-function child_theme_excerpt_more( \$more ) {
-	return '${1:...}';
+add_filter( 'excerpt_more', '${1:child}_excerpt_more' );
+/**
+ * Customizes the 'excerpt_more' text
+ *
+ * @param  string \$more the current 'more text'
+ * @return string the modified more text
+ */
+function ${1:child}_excerpt_more( \$more ) {
+	return '${2:...}';
 }
-$2
 ]]></content>
 	<tabTrigger>filterexcerptmore</tabTrigger>
 	<scope>source.php,source.php.embedded.block.html</scope>

@@ -1,6 +1,7 @@
 <snippet>
 	<content><![CDATA[
-add_theme_support( 'genesis-structural-wraps', array( 'inner' ) );
+# Adds a wrap div to specified div ids
+add_theme_support( 'genesis-structural-wraps', array( ${1:'header'}, ${2:'nav'}, ${3:'subnav'}, ${4:'inner'}, ${5:'footer-widgets'}, ${6:'footer'} ) );
 ]]></content>
 	<tabTrigger>structuralwraps</tabTrigger>
 	<scope>source.php,source.php.embedded.block.html</scope>
