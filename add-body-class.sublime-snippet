@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-add_filter( 'body_class', 'add_body_class' );
-function add_body_class( \$classes ) {
-   \$classes[] = '${1:class-name}';
-   return \$classes;
+add_filter( 'body_class', '${1:prefix}_body_class' );
+function ${1:prefix}_body_class( \$classes ) {
+	\$classes[] = '${2:class-name}';
+	return \$classes;
 }
 ]]></content>
 	<tabTrigger>addbodyclass</tabTrigger>
