@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+# Enable html5 doctype and elements
+add_theme_support( 'genesis-html5' );
+]]></content>
+	<tabTrigger>genesishtml5</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Enables HTML5 support</description>
+</snippet>

@@ -23,3 +23,7 @@ If you haven't got Package Control installed (seriously, go install it!) you wil
 [snippet_list]: http://justintallant.com/genesis-sublime-text-2-snippets
 
 
+### Contributors ###
+
+[@jtallant](http://twitter.com/jtallant)
+[@defries](http://twitter.com/defries)

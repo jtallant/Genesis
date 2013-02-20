@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+# Enable post format images
+add_theme_support( 'genesis-post-format-images' );
+]]></content>
+	<tabTrigger>postformatimages</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Enables post format images</description>
+</snippet>
