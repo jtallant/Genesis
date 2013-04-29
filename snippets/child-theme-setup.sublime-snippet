@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-add_action( 'genesis_setup', '${1:child}_theme_setup', 15 );
+add_action( 'genesis_setup', '${1:prefix}_theme_setup', 15 );
 /**
  * Theme Setup
  *
@@ -10,7 +10,7 @@ add_action( 'genesis_setup', '${1:child}_theme_setup', 15 );
  *
  * @return void
  */
-function ${1:child}_theme_setup() {
+function ${1:prefix}_theme_setup() {
 
 	# BACKEND
 	# ==================================================================================

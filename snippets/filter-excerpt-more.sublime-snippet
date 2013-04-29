@@ -1,13 +1,13 @@
 <snippet>
 	<content><![CDATA[
-add_filter( 'excerpt_more', '${1:child}_excerpt_more' );
+add_filter( 'excerpt_more', '${1:prefix}_excerpt_more' );
 /**
  * Customizes the 'excerpt_more' text
  *
  * @param  string \$more the current 'more text'
  * @return string the modified more text
  */
-function ${1:child}_excerpt_more( \$more ) {
+function ${1:prefix}_excerpt_more( \$more ) {
 	return '${2:...}';
 }
 ]]></content>

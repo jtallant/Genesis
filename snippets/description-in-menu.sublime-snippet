@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-add_filter( 'walker_nav_menu_start_el', '${1:child}_enable_menu_description', 10, 2 );
+add_filter( 'walker_nav_menu_start_el', '${1:prefix}_enable_menu_description', 10, 2 );
 /**
  * Allows the description to be output in menus
  *
@@ -8,7 +8,7 @@ add_filter( 'walker_nav_menu_start_el', '${1:child}_enable_menu_description', 10
  * @param WP_Post \$item the menu item object
  * @return string the modified item output
  */
-function ${1:child}_enable_menu_description( \$item_output, \$item ) {
+function ${1:prefix}_enable_menu_description( \$item_output, \$item ) {
 	if ( ' ' !== \$item->post_content ) {
 		return preg_replace( '/(<a.*?>[^<]*?)</', '\$1' . '<span>' . \$item->post_content . '</span><',  \$item_output );
 	}

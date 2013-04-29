@@ -1,13 +1,13 @@
 <snippet>
 	<content><![CDATA[
 remove_action( 'genesis_footer', 'genesis_do_footer' );
-add_action( 'genesis_footer', '${1:child}_do_footer' );
+add_action( 'genesis_footer', '${1:prefix}_do_footer' );
 /**
  * Outputs markup to the footer
  *
  * @return void
  */
-function ${1:child}_do_footer() {
+function ${1:prefix}_do_footer() {
 	$2
 }
 ]]></content>
